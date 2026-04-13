@@ -14,6 +14,7 @@ FeatureSetting = Literal[
     "12features",
     "12features_without_pax",
     "12features_gene_trioplp",
+    "9features",
 ]
 
 OUTCOME_COLS: Final[list[str]] = ["esrd_1y", "esrd_3y", "esrd_5y"]
@@ -44,10 +45,24 @@ FEATURES_12FEATURES_GENE_TRIOPLP: Final[list[str]] = [
     "gene_trioplp (1/0)" if f == "PAX2" else f for f in FEATURES_12FEATURES
 ]
 
+FEATURES_9FEATURES: Final[list[str]] = [
+    "gender (1/0)",
+    "preterm_birth (1/0)",
+    "cakut_subphenotype",
+    "behavioral_cognitive_abnormalities (1/0)",
+    "congenital_heart_disease (1/0)",
+    "ocular (1/0)",
+    "age_first_diagnose",
+    "ckd_stage_first_diagnose",
+    "short_stature (1/0)",
+]
+
 FEATURE_SETS: dict[FeatureSetting, list[str]] = {
     "12features": list(FEATURES_12FEATURES),
     "12features_without_pax": list(FEATURES_12FEATURES_WITHOUT_PAX),
     "12features_gene_trioplp": list(FEATURES_12FEATURES_GENE_TRIOPLP),
+    "9features": list(FEATURES_9FEATURES),
+
 }
 
 
