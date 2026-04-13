@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# macOS
+.DS_Store
+
+# CatBoost training logs
+catboost_info/
+
+# Generated outputs (predictions & eval results)
+output/
+
+# Word source doc (model card content is in README.md)
+"model card-0413.docx"
+model\ card-0413.docx
