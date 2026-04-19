@@ -42,9 +42,7 @@ This repository contains the code for the paper:
 
 ### 4. Potential Fairness Considerations
 
-- **Selection bias:** To mitigate genetic ascertainment bias, we performed rigorous sensitivity analysis within the sub-cohort of patients with complete genetic data to assess the robustness of the findings.
-
-- **Demographic fairness:** Model performance was evaluated in subgroups with and without genetic data. However, because the current cohorts are demographically homogeneous, further validation in more diverse racial and ethnic populations is needed.
+- **Demographic fairness:** Because the current cohorts are demographically homogeneous, further validation in more diverse racial and ethnic populations is needed.
 
 ---
 
